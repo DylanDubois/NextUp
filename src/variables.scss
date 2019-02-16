@@ -1,0 +1,47 @@
+@import url("http://fonts.googleapis.com/css?family=Oswald");
+@import url("http://fonts.googleapis.com/css?family=Lobster");
+
+$theme-colors: (
+  "primary": #ffa800
+);
+
+$primary-font: "Oswald", cursive !important;
+$brand-font: "Lobster", cursive !important;
+
+.header {
+  font-family: $primary-font;
+  //-webkit-text-stroke: 0.25px white;
+}
+
+.brand {
+  font-family: $brand-font;
+  //-webkit-text-stroke: 0.5px white;
+}
+
+.gradient {
+  background-image: linear-gradient(
+    to bottom right,
+    #343a40,
+    #343a40,
+    #343a40,
+    #ffa800
+  ) !important;
+}
+
+.max-height {
+  height: 100vh !important;
+}
+
+@media (min-width: 500px) {
+  .gradient {
+    background-image: linear-gradient(
+      to bottom right,
+      #343a40,
+      #343a40,
+      #ffa800
+    ) !important;
+  }
+}
+
+/* import bootstrap to set changes */
+@import "~bootstrap/scss/bootstrap";

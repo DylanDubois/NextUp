@@ -1,0 +1,47 @@
+.SongList {
+  .list-item {
+    margin-bottom: 0.5em !important;
+    border: 1px solid transparent !important;
+    h2 {
+      font-size: 1.5em;
+    }
+
+    h5 {
+      font-size: 1em;
+    }
+  }
+
+  .list-item:hover {
+    background: #343a40 !important;
+    border: 1px solid #ffa800 !important;
+    transition: 0.3s ease-in;
+    h2 {
+      color: #ffa800;
+    }
+
+    h5 {
+      color: #ffa800;
+    }
+  }
+
+  .list {
+  }
+
+  @media (min-width: 500px) {
+    .list-item {
+      max-height: 90px !important;
+      margin-bottom: 0.5em !important;
+      h2 {
+        font-size: 2em;
+      }
+
+      h5 {
+        font-size: 1.5em;
+      }
+    }
+
+    .list {
+      padding: 32px 100px;
+    }
+  }
+}
