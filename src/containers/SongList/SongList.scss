@@ -1,7 +1,8 @@
 .SongList {
   .list-item {
+    text-decoration: none;
     margin-bottom: 0.5em !important;
-    border: 1px solid transparent !important;
+    border: 1px solid #23c7a6 !important;
     h2 {
       font-size: 1.5em;
     }
@@ -12,15 +13,15 @@
   }
 
   .list-item:hover {
-    background: #343a40 !important;
-    border: 1px solid #ffa800 !important;
+    background: #23c7a6 !important;
+    border: 1px solid #23c7a6 !important;
     transition: 0.3s ease-in;
     h2 {
-      color: #ffa800;
+      color: #343a40;
     }
 
     h5 {
-      color: #ffa800;
+      color: #343a40;
     }
   }
 
