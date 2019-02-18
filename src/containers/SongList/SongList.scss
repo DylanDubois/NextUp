@@ -2,7 +2,8 @@
   .list-item {
     text-decoration: none;
     margin-bottom: 0.5em !important;
-    border: 1px solid #00ffff !important;
+    border-bottom: 1px solid #00ffff !important;
+    border-top: 1px solid #00ffff !important;
     h2 {
       font-size: 1.5em;
     }
@@ -14,7 +15,8 @@
 
   .list-item:hover {
     background: #00ffff !important;
-    border: 1px solid #00ffff !important;
+    border-bottom: 1px solid #00ffff !important;
+    border-top: 1px solid #00ffff !important;
     transition: 0.3s ease-in;
     h2 {
       color: #343a40;
@@ -32,6 +34,7 @@
     .list-item {
       max-height: 90px !important;
       margin-bottom: 0.5em !important;
+      border: 1px solid #00ffff !important;
       h2 {
         font-size: 2em;
       }
