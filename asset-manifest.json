@@ -1,16 +1,16 @@
 {
-  "main.css": "/NextUp/static/css/main.76e6968c.chunk.css",
-  "main.js": "/NextUp/static/js/main.36e2b8bd.chunk.js",
-  "main.js.map": "/NextUp/static/js/main.36e2b8bd.chunk.js.map",
+  "main.css": "/NextUp/static/css/main.662b6277.chunk.css",
+  "main.js": "/NextUp/static/js/main.b2f0e4db.chunk.js",
+  "main.js.map": "/NextUp/static/js/main.b2f0e4db.chunk.js.map",
   "runtime~main.js": "/NextUp/static/js/runtime~main.1f6d33fa.js",
   "runtime~main.js.map": "/NextUp/static/js/runtime~main.1f6d33fa.js.map",
   "static/css/2.85d984bd.chunk.css": "/NextUp/static/css/2.85d984bd.chunk.css",
   "static/js/2.a06d563c.chunk.js": "/NextUp/static/js/2.a06d563c.chunk.js",
   "static/js/2.a06d563c.chunk.js.map": "/NextUp/static/js/2.a06d563c.chunk.js.map",
   "index.html": "/NextUp/index.html",
-  "precache-manifest.1a2a2aac8602e726f920e6d520590db8.js": "/NextUp/precache-manifest.1a2a2aac8602e726f920e6d520590db8.js",
+  "precache-manifest.af4f81b477209761f96763dea953c900.js": "/NextUp/precache-manifest.af4f81b477209761f96763dea953c900.js",
   "service-worker.js": "/NextUp/service-worker.js",
   "static/css/2.85d984bd.chunk.css.map": "/NextUp/static/css/2.85d984bd.chunk.css.map",
-  "static/css/main.76e6968c.chunk.css.map": "/NextUp/static/css/main.76e6968c.chunk.css.map",
+  "static/css/main.662b6277.chunk.css.map": "/NextUp/static/css/main.662b6277.chunk.css.map",
   "static/media/logo.svg": "/NextUp/static/media/logo.5d5d9eef.svg"
 }
