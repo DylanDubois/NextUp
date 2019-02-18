@@ -2,7 +2,7 @@
   .list-item {
     text-decoration: none;
     margin-bottom: 0.5em !important;
-    border: 1px solid #23c7a6 !important;
+    border: 1px solid #00ffff !important;
     h2 {
       font-size: 1.5em;
     }
@@ -13,8 +13,8 @@
   }
 
   .list-item:hover {
-    background: #23c7a6 !important;
-    border: 1px solid #23c7a6 !important;
+    background: #00ffff !important;
+    border: 1px solid #00ffff !important;
     transition: 0.3s ease-in;
     h2 {
       color: #343a40;
