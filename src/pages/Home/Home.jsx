@@ -50,7 +50,7 @@ class Home extends Component {
       return;
     }
 
-    if (!this.state.url.includes("www.youtube.com")) {
+    if (!this.state.url.includes("youtube.com")) {
       alert("Must provide YouTube URL.");
       return;
     }
