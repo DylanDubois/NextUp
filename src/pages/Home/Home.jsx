@@ -72,6 +72,10 @@ class Home extends Component {
     dbref.update(song);
   };
 
+  likeSong = song => {
+    console.log(song);
+  };
+
   render() {
     return (
       <div>
@@ -112,7 +116,7 @@ class Home extends Component {
             </p>
           )}
         </div>
-        <SongList songs={this.state.songs} />
+        <SongList songs={this.state.songs} likeSong={this.likeSong} />
 
         <div
           className="modal fade"

@@ -7,18 +7,22 @@ const songList = props => {
     .map(songId => {
       let song = props.songs[songId];
       return (
-        <a
+        <div
           className="bg-dark row m-0 pt-2 text-left list-item text-primary"
           key={song.id}
-          href={song.url}
         >
-          <div className="col-12">
-            <h2 className="brand">
-              {song.title} - {song.artist}
-            </h2>
+          <div className="col-11">
+            <a href={song.url}>
+              <h2 className="brand">
+                {song.title} - {song.artist}
+              </h2>
+            </a>
             <h5 className="header">{song.poster}</h5>
           </div>
-        </a>
+          <div className="col-1">
+            <button onClick={() => props.likeSong(song)}>LIKE</button>
+          </div>
+        </div>
       );
     });
   return (
