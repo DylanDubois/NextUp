@@ -28,6 +28,10 @@
     }
   }
 
+  .like-button svg {
+    cursor: pointer;
+  }
+
   .list {
     max-height: 100% !important;
     overflow: scroll;

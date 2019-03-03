@@ -62,7 +62,8 @@ class Home extends Component {
       artist: this.state.artist,
       url: this.state.url,
       poster: this.state.user.displayName,
-      id: id
+      id: id,
+      likes: [this.state.user.uid]
     };
     this.setState({
       title: "",
@@ -75,14 +76,18 @@ class Home extends Component {
   };
 
   likeSong = song => {
-    console.log("like");
+    if (!this.state.user) {
+      alert("Please sign-in to like songs.");
+      return;
+    }
     const dbref = fire.database().ref("/songs/" + song.id + "/likes/");
+    if (!song.likes) song.likes = [];
     song.likes.push(this.state.user.uid);
     dbref.update(song.likes);
   };
 
   dislikeSong = song => {
-    console.log("dislike");
+    if (!this.state.user.uid) return;
     const dbref = fire
       .database()
       .ref(
