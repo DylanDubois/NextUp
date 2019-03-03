@@ -6,6 +6,14 @@ const songList = props => {
     .reverse()
     .map(songId => {
       let song = props.songs[songId];
+      let likeButton = (
+        <button onClick={() => props.likeSong(song)}>LIKE</button>
+      );
+      if (song.likes.includes(props.user.uid)) {
+        likeButton = (
+          <button onClick={() => props.dislikeSong(song)}>DISLIKE</button>
+        );
+      }
       return (
         <div
           className="bg-dark row m-0 pt-2 text-left list-item text-primary"
@@ -19,9 +27,7 @@ const songList = props => {
             </a>
             <h5 className="header">{song.poster}</h5>
           </div>
-          <div className="col-1">
-            <button onClick={() => props.likeSong(song)}>LIKE</button>
-          </div>
+          <div className="col-1">{likeButton}</div>
         </div>
       );
     });

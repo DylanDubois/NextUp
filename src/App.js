@@ -6,7 +6,9 @@ import fire, { signInWithGoogle, signOut } from "./config/Fire";
 
 class App extends Component {
   state = {
-    user: null,
+    user: {
+      uid: null
+    },
     songs: []
   };
 

@@ -9,7 +9,9 @@ class Home extends Component {
     artist: "",
     url: "",
     poster: "",
-    user: null
+    user: {
+      uid: null
+    }
   };
 
   componentWillReceiveProps(nextProps) {
@@ -73,7 +75,11 @@ class Home extends Component {
   };
 
   likeSong = song => {
-    console.log(song);
+    console.log("like");
+  };
+
+  dislikeSong = song => {
+    console.log("dislike");
   };
 
   render() {
@@ -116,7 +122,12 @@ class Home extends Component {
             </p>
           )}
         </div>
-        <SongList songs={this.state.songs} likeSong={this.likeSong} />
+        <SongList
+          songs={this.state.songs}
+          likeSong={this.likeSong}
+          dislikeSong={this.dislikeSong}
+          user={this.state.user}
+        />
 
         <div
           className="modal fade"
