@@ -9,7 +9,7 @@ const songList = props => {
       let likeButton = (
         <button onClick={() => props.likeSong(song)}>LIKE</button>
       );
-      if (song.likes.includes(props.user.uid)) {
+      if (props.user && song.likes.includes(props.user.uid)) {
         likeButton = (
           <button onClick={() => props.dislikeSong(song)}>DISLIKE</button>
         );

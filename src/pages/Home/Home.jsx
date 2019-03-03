@@ -76,10 +76,22 @@ class Home extends Component {
 
   likeSong = song => {
     console.log("like");
+    const dbref = fire.database().ref("/songs/" + song.id + "/likes/");
+    song.likes.push(this.state.user.uid);
+    dbref.update(song.likes);
   };
 
   dislikeSong = song => {
     console.log("dislike");
+    const dbref = fire
+      .database()
+      .ref(
+        "/songs/" +
+          song.id +
+          "/likes/" +
+          song.likes.indexOf(this.state.user.uid)
+      );
+    dbref.remove();
   };
 
   render() {
